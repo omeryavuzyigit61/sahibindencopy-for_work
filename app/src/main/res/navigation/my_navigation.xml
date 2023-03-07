@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/mainCategoryFragment">
+
+    <fragment
+        android:id="@+id/mainCategoryFragment"
+        android:name="com.example.omerseyfettinyavuzyigitsahibindencopy.view.fragment.MainCategoryFragment"
+        android:label="fragment_main_category"
+        tools:layout="@layout/fragment_main_category" >
+        <action
+            android:id="@+id/action_mainCategoryFragment_to_secondCategoryFragment"
+            app:destination="@id/secondCategoryFragment" />
+        <action
+            android:id="@+id/action_mainCategoryFragment_to_emtyPageFragment"
+            app:destination="@id/emtyPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondCategoryFragment"
+        android:name="com.example.omerseyfettinyavuzyigitsahibindencopy.view.fragment.SecondCategoryFragment"
+        android:label="fragment_second_category"
+        tools:layout="@layout/fragment_second_category" >
+        <action
+            android:id="@+id/action_secondCategoryFragment_to_brandCategoryFragment"
+            app:destination="@id/brandCategoryFragment" />
+        <action
+            android:id="@+id/action_secondCategoryFragment_to_mainCategoryFragment2"
+            app:destination="@id/mainCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/brandCategoryFragment"
+        android:name="com.example.omerseyfettinyavuzyigitsahibindencopy.view.fragment.BrandCategoryFragment"
+        android:label="fragment_brand_category"
+        tools:layout="@layout/fragment_brand_category" >
+        <action
+            android:id="@+id/action_brandCategoryFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_brandCategoryFragment_to_secondCategoryFragment"
+            app:destination="@id/secondCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.omerseyfettinyavuzyigitsahibindencopy.view.fragment.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_previewAdvertFragment"
+            app:destination="@id/previewAdvertFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_brandCategoryFragment"
+            app:destination="@id/brandCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/previewAdvertFragment"
+        android:name="com.example.omerseyfettinyavuzyigitsahibindencopy.view.fragment.PreviewAdvertFragment"
+        android:label="fragment_preview_advert"
+        tools:layout="@layout/fragment_preview_advert" >
+        <action
+            android:id="@+id/action_previewAdvertFragment_to_adSelectFragment"
+            app:destination="@id/adSelectFragment" />
+        <action
+            android:id="@+id/action_previewAdvertFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adSelectFragment"
+        android:name="com.example.omerseyfettinyavuzyigitsahibindencopy.view.fragment.AdSelectFragment"
+        android:label="fragment_ad_select"
+        tools:layout="@layout/fragment_ad_select" >
+        <action
+            android:id="@+id/action_adSelectFragment_to_finishFragment"
+            app:destination="@id/finishFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_adSelectFragment_to_previewAdvertFragment"
+            app:destination="@id/previewAdvertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.example.omerseyfettinyavuzyigitsahibindencopy.view.fragment.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish" >
+        <action
+            android:id="@+id/action_finishFragment_to_emtyPageFragment"
+            app:destination="@id/emtyPageFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/emtyPageFragment"
+        android:name="com.example.omerseyfettinyavuzyigitsahibindencopy.view.fragment.EmtyPageFragment"
+        android:label="fragment_emty_page"
+        tools:layout="@layout/fragment_emty_page" />
+</navigation>

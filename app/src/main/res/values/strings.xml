@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">omerseyfettinyavuzyigitsahibindencopy</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lan_link">İlan Link</string>
+    <string name="link">İlan Link</string>
+    <string name="name">İlan Adı</string>
+    <string name="price">Fiyat</string>
+    <string name="description">Açıklama</string>
+    <string name="please_enter_text">Lütfen değer giriniz</string>
+    <string name="entermore">50 karakterden fazlasını gir</string>
+    <string name="enterless">2000 karakterden az gir</string>
+    <string name="hazirlayan">Hazırlayan:Ömer Seyfettin YAVUZYİĞİT</string>
+
+    <string-array name="currency_array">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>POUND</item>
+        <item>FRANK</item>
+        <item>TL</item>
+        <item>Sterlin</item>
+    </string-array>
+</resources>
